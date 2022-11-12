@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
     <nav>
@@ -25,6 +27,9 @@
     
     <main>
         <section>
+            <header>
+                <img src="../images/code_sleep_repeat.jpeg" alt="A phrase 'Eat, Code, Sleep, Repeat' on a black background">
+            </header>
             <h1>About Me</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint labore nesciunt obcaecati enim, aut omnis natus eligendi minus fugit recusandae doloremque, illo eum sit aperiam delectus rem vitae laborum? Quia?</p>
         </section>
@@ -52,14 +57,26 @@
 
                 <fieldset>
                     <legend>How do you know me?</legend>
-                    <label for="university">University</label>
-                    <input id="university" name="howWeMet" type="radio">
-                    <label for="keepcoding">keepcoding kick-off</label>
-                    <input id="keepcoding" name="howWeMet" type="radio">
-                    <label for="school">School</label>
-                    <input id="school" name="howWeMet" type="radio">
-                    <label for="github">GitHub</label>
-                    <input id="github" name="howWeMet" type="radio">
+                    <div>
+                        <label for="university">University</label>
+                        <input class="radio" id="university" name="howWeMet" type="radio">
+                    </div>
+                    <div>
+                        <label for="keepcoding">keepcoding kick-off</label>
+                        <input class="radio" id="keepcoding" name="howWeMet" type="radio">
+                    </div>
+                    <div>
+                        <label for="keepcoding">keepcoding kick-off</label>
+                        <input class="radio" id="keepcoding" name="howWeMet" type="radio">
+                    </div>
+                    <div>
+                        <label for="school">School</label>
+                        <input class="radio" id="school" name="howWeMet" type="radio">  
+                    </div>
+                    <div>
+                        <label for="github">GitHub</label>
+                        <input class="radio" id="github" name="howWeMet" type="radio">
+                    </div>
                 </fieldset>
 
                 <label for="question">Ask me a question</label>

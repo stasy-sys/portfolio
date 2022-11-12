@@ -1,0 +1,11 @@
+fieldset {
+    border: none;
+}
+
+input, textarea {
+    display: block;
+}
+
+.radio {
+    display: inline;
+}
