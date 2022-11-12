@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav>
+        <img src="../images/foto_portfolio.jpg" alt="Foto de portfolio">
+        <ul>
+            <li>
+                <a href="#">About me</a>
+              </li>
+              <li>
+                <a href="#">Skills</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+        </ul>
+        <hr>
+    </nav>
+    
+    <main>
+        <section>
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint labore nesciunt obcaecati enim, aut omnis natus eligendi minus fugit recusandae doloremque, illo eum sit aperiam delectus rem vitae laborum? Quia?</p>
+        </section>
+
+        <section>
+            <h1>My Skills</h1>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+
+        </section>
+
+        <section>
+            <h1>Contact</h1>
+            <form action="registro-completado.html" method="post" novalidate>
+                <label for="name">Name</label>
+                <input id="name" name="name" required type="text" placeholder="Type your name">
+                <label for="surname">Surname</label>
+                <input id="surname" name="surname" type="text" placeholder="Type your surname">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9}+" placeholder="Phone number">
+                <label for="github">github</label>
+                <input id="github" name="github" pattern="@." placeholder="With this format">
+
+                <fieldset>
+                    <legend>How do you know me?</legend>
+                    <label for="university">University</label>
+                    <input id="university" name="howWeMet" type="radio">
+                    <label for="keepcoding">keepcoding kick-off</label>
+                    <input id="keepcoding" name="howWeMet" type="radio">
+                    <label for="school">School</label>
+                    <input id="school" name="howWeMet" type="radio">
+                    <label for="github">GitHub</label>
+                    <input id="github" name="howWeMet" type="radio">
+                </fieldset>
+
+                <label for="question">Ask me a question</label>
+                <textarea name="question" id="question" cols="30" rows="7"></textarea>
+                <input type="submit" name="send" value="Send">
+
+
+        </section>
+
+    </main>
+    <footer></footer>
+</body>
+</html>
