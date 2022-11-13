@@ -37,6 +37,8 @@ nav ul {
 
 nav {
     display: flex;
+    background: white;
+    border-bottom: solid 2px black;
 }
 
 nav img {
@@ -46,6 +48,12 @@ nav img {
     align-items: end;
 }
 
+input {
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    border: solid 1px lightgrey;
+}
 
 section div img {
     width: 100%;
@@ -68,6 +76,13 @@ h1 {
   main {
     box-sizing: border-box;
 }
+
+fieldset {
+    border: solid 1px black;
+    border-radius: 5px;
+      padding: 15px;
+      margin: 15px 0px;
+  }
 
 section {
     margin: 20px;
@@ -148,5 +163,6 @@ section {
     }
 
   }
+
 
 
