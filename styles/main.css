@@ -6,6 +6,147 @@ input, textarea {
     display: block;
 }
 
-.radio {
-    display: inline;
+.footer {
+    background-color: rgba(246, 175, 108, 0.649);
+    text-align: center;
 }
+
+.fa-brands {
+    margin: 20px;
+    font-size: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+}
+nav li {
+    padding: 20px;
+    display: flex;
+
+
+}
+nav ul {
+    width: 100%;
+    align-items: flex-end;
+    justify-content:end;
+    display: none;
+}
+
+
+nav {
+    display: flex;
+}
+
+nav img {
+    height: auto;
+    max-width: 90px;
+    width: 100%;
+    align-items: end;
+}
+
+
+section div img {
+    width: 100%;
+}
+
+body {
+    background-color: rgba(244, 227, 134, 0.786);
+}
+
+h1 {
+    color: black;
+    font-family: arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    }
+
+
+  main {
+    box-sizing: border-box;
+}
+
+section {
+    margin: 20px;
+}
+
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.bar{
+    position: relative;
+ 
+    border: 2px solid #0d96e0;
+ 
+    border-radius: 20px;
+}
+
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #0d96e0;
+} 
+
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+
+@keyframes css-fill{
+    100%{
+        width: 50%;
+    }
+}
+
+#js-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 50%;
+    }
+}
+
+#python-bar{
+    animation: jQuery-fill 2s forwards;
+}
+@keyframes jQuery-fill{
+    100%{
+        width: 85%;
+    }
+} 
+
+@media screen and (min-width: 576px) {
+    nav ul {
+      display: flex;
+    }
+
+    nav li:hover {
+        transition: background 0.5s linear;
+        background: #eee;
+    }
+
+  }
+
+

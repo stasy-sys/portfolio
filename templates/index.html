@@ -7,63 +7,86 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <script src="https://kit.fontawesome.com/aef06486d5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
         <img src="../images/foto_portfolio.jpg" alt="Foto de portfolio">
         <ul>
             <li>
-                <a href="#">About me</a>
-              </li>
-              <li>
-                <a href="#">Skills</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
+                <a href="#about-me">About me</a>
+            </li>
+            <li>
+                <a href="#my-skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
         </ul>
-        <hr>
     </nav>
+<hr>
     
     <main>
-        <section>
-            <header>
+        <section >
+            <div>
                 <img src="../images/code_sleep_repeat.jpeg" alt="A phrase 'Eat, Code, Sleep, Repeat' on a black background">
-            </header>
-            <h1>About Me</h1>
+            </div>
+            <h1 id="about-me">About Me</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint labore nesciunt obcaecati enim, aut omnis natus eligendi minus fugit recusandae doloremque, illo eum sit aperiam delectus rem vitae laborum? Quia?</p>
         </section>
 
-        <section>
-            <h1>My Skills</h1>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>Python</p>
+        <section class="skills">
+            <h1 id="skills">Skills</h1>
+            <div class="skills">
+                <div class="details">
+                  <span>CSS</span>
+                  <span>50%</span>
+                 </div>
+                 <div class="bar">
+                   <div id="css-bar"></div>
+                 </div>
+               </div>
+               
+               <div class="skills">
+                <div class="details">
+                  <span>Javascript</span>
+                  <span>50%</span>
+                </div>
+               
+                 <div class="bar">
+                 <div id="js-bar"></div>
+                </div>
+               </div>
+               
+               <div class="skills">
+                <div class="details">
+                  <span>Python</span>
+                  <span>85%</span>
+                </div>
+                <div class="bar">
+                 <div id="python-bar"></div>
+                 </div>
+               </div>
 
         </section>
 
         <section>
-            <h1>Contact</h1>
-            <form action="registro-completado.html" method="post" novalidate>
+            <h1 id="contact">Contact</h1>
+            <form action="registered.html">
                 <label for="name">Name</label>
                 <input id="name" name="name" required type="text" placeholder="Type your name">
                 <label for="surname">Surname</label>
-                <input id="surname" name="surname" type="text" placeholder="Type your surname">
+                <input id="surname" name="surname" required type="text" placeholder="Type your surname">
                 <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9}+" placeholder="Phone number">
+                <input type="phone" id="phone" name="phone" pattern="[0-9}+" placeholder="Phone number" required>
                 <label for="github">github</label>
-                <input id="github" name="github" pattern="@." placeholder="With this format">
+                <input id="github" name="github" pattern="@.+" placeholder="With this format" required>
 
                 <fieldset>
-                    <legend>How do you know me?</legend>
+                    <legend class="text-forms"><em>How do you know me?</em></legend>
                     <div>
                         <label for="university">University</label>
-                        <input class="radio" id="university" name="howWeMet" type="radio">
-                    </div>
-                    <div>
-                        <label for="keepcoding">keepcoding kick-off</label>
-                        <input class="radio" id="keepcoding" name="howWeMet" type="radio">
+                        <input class="radio" id="university" name="howWeMet" type="radio" checked>
                     </div>
                     <div>
                         <label for="keepcoding">keepcoding kick-off</label>
@@ -79,14 +102,18 @@
                     </div>
                 </fieldset>
 
-                <label for="question">Ask me a question</label>
-                <textarea name="question" id="question" cols="30" rows="7"></textarea>
+                <label for="question">Max 180 characters</label>
+                <textarea name="question" id="question" maxlength="180" cols="30" rows="7"></textarea>
                 <input type="submit" name="send" value="Send">
-
-
         </section>
 
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
